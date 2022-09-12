@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Описание товара
+{% endblock %}
+
+{% block body %}
+ <div class="container">
+     <h1>Статья о наших товарах</h1>
+ </div>
+   <form method="post">
+       <input type ="text" name = "title" id="title" class = "container form-control" placeholder="Введите категорию товара"><br>
+       <textarea name ="intro" id="intro" class = "container form-control" placeholder="Введите название"></textarea><br>
+       <textarea name ="text" id="text" class = "container form-control" placeholder="Введите описание "></textarea><br>
+       <div class="container">
+           <div class="d-grid gap-2 cd-6 mx-auto">
+               <input type ="submit" class = "btn btn-danger" value="Отправить">
+           </div>
+       </div>
+   </form>
+
+{% endblock %}
+
+
